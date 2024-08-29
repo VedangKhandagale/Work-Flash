@@ -425,8 +425,107 @@
     </footer>
     </section>
   </div>
+  <style>
+    /* General Section Styling */
+.section.contact-me {
+  padding: 60px 0;
+  background-color: transparent; /* Make section background fully transparent */
+}
 
-  <!-- Scripts -->
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333; /* Ensuring text remains visible */
+}
+
+.section-heading h6 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-heading .line-dec {
+  width: 50px;
+  height: 3px;
+  background-color: #ff4a57;
+  margin: 0 auto 20px;
+}
+
+.section-heading span {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Form Styling */
+form#contact {
+  background-color: transparent; /* Make form background fully transparent */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: none; /* Remove shadow to fully sync with background */
+  transition: transform 0.3s ease; /* Retain form animations */
+}
+
+form#contact:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+form#contact .form-control {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent input fields */
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add animation */
+}
+
+form#contact .form-control:focus {
+  border-color: #ff4a57;
+  box-shadow: 0 0 8px rgba(255, 74, 87, 0.2); /* Focus effect */
+}
+
+form#contact textarea.form-control {
+  resize: none;
+}
+
+form#contact .button {
+  background-color: #ff4a57;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add animation */
+}
+
+form#contact .button:hover {
+  background-color: #e54350;
+  transform: translateY(-2px); /* Slight raise on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  form#contact .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+  </style>
+    <!-- Scripts -->
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/custom.js"></script>
   <!-- Fast Counter-up -->
